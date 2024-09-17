@@ -23,9 +23,9 @@ export default defineConfig({
         ],
       },
       manifest: {
-        name: "The wedding of Saiful & Cindy",
-        short_name: "Saiful & Cindy",
-        description: "Selasa, 16 Mei 2023",
+        name: "The Wedding of Lulu & Akmal",
+        short_name: "Lulu & Akmal",
+        description: "Kamis, 3 April 2024",
         theme_color: "rgb(229, 229, 203)",
         background_color: "rgb(60, 42, 33)",
         orientation: "portrait",
