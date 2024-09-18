@@ -31,7 +31,7 @@ const textVariants = {
  */
 const KeluargaBesar = ({ title, orangTuaPria, orangTuaWanita }) => {
   const header = "Keluarga Besar";
-  const orangTua = `Bpk. ${orangTuaPria} & Ibu. ${orangTuaWanita}`;
+  const orangTua = `${orangTuaPria} & ${orangTuaWanita}`;
 
   return (
     <Grid container spacing={1}>
