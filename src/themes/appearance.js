@@ -20,7 +20,7 @@ export const theme = createTheme({
       main: "rgb(180, 212, 255)",
     },
     secondary: {
-      main: "rgbrgb(134, 182, 246)",
+      main: "rgb(134, 182, 246)",
     },
   },
   components: {
