@@ -7,20 +7,20 @@ export const theme = createTheme({
   typography,
   palette: {
     mode: "dark",
-    divider: "rgb(213, 206, 163)",
+    divider: "rgb(238, 245, 255)",
     background: {
-      default: "rgb(60, 42, 33)",
-      paper: "rgb(213, 206, 163)",
+      default: "rgb(134, 182, 246)",
+      paper: "rgb(238, 245, 255)",
     },
     text: {
-      primary: "rgb(229, 229, 203)",
-      secondary: "rgb(26, 18, 11)",
+      primary: "rgb(180, 212, 255)",
+      secondary: "rgb(23, 107, 135)",
     },
     primary: {
-      main: "rgb(229, 229, 203)",
+      main: "rgb(180, 212, 255)",
     },
     secondary: {
-      main: "rgb(60, 42, 33)",
+      main: "rgbrgb(134, 182, 246)",
     },
   },
   components: {
@@ -34,8 +34,8 @@ export const theme = createTheme({
     MuiTooltip: {
       styleOverrides: {
         tooltip: {
-          backgroundColor: 'rgba(26, 18, 11, 0.8)',
-          border: '2px solid rgb(213, 206, 163)',
+          backgroundColor: "rgba(23, 107, 135, 0.8)",
+          border: "2px solid rgb(238, 245, 255)",
           borderRadius: 20,
         },
       },
