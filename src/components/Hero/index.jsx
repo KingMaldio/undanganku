@@ -165,22 +165,18 @@ const Hero = () => {
             <Box
               component={motion.div}
               variants={dividerVariants}
-              sx={{ borderBottom: 3, borderColor: "divider" }}
+              sx={{ my: 4, borderBottom: 3, borderColor: "divider" }}
             />
 
             <Typography
               variant="h4"
               component="p"
               sx={{
-                mt: 2,
                 textAlign: {
                   md: "left",
                   xs: "center",
                 },
-                fontSize: {
-                  md: "2em",
-                  xs: "1em",
-                },
+                fontSize: "1em",
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
               }}
             >
