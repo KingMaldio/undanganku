@@ -25,8 +25,9 @@ const textVariants = {
  * @returns React.ReactElement
  */
 const Words = () => {
-  const words =
-    "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.\n(Qs. Ar-Rum: 21)";
+  const isi =
+    "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.";
+  const ayat = "(Qs. Ar-Rum: 21)";
 
   return (
     <Container
@@ -42,14 +43,28 @@ const Words = () => {
         justifyContent: "center",
         flexDirection: "column",
         my: 10,
+        textColor: "black",
+        fontStyle: "italic",
       }}
     >
       <Typography
-        variant="h6"
+        variant="h5"
         component="div"
         sx={{ textAlign: "center", mt: 5 }}
       >
-        {words.split(" ").map((text, key) => (
+        {isi.split(" ").map((text, key) => (
+          <TextMask key={key} variants={textVariants}>
+            {text}
+          </TextMask>
+        ))}
+      </Typography>
+      
+      <Typography
+        variant="h5"
+        component="div"
+        sx={{ textAlign: "center", mt: 5 }}
+      >
+        {ayat.split(" ").map((text, key) => (
           <TextMask key={key} variants={textVariants}>
             {text}
           </TextMask>
