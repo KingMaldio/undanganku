@@ -43,8 +43,12 @@ const Words = () => {
         justifyContent: "center",
         flexDirection: "column",
         my: 10,
-        textColor: "black",
+        color: "black",
         fontStyle: "italic",
+        fontSize: {
+          md: "1.5em",
+          xs: "1em",
+        },
       }}
     >
       <Typography
