@@ -31,41 +31,11 @@ const textVariants = {
  * @returns Reacr.ReactElement
  */
 const Tanggal = () => {
-  const textHeader = "Rangkaian Acara Akan Diselenggarakan";
   const { akad, resepsi } = useDB((db) => db.wedding);
 
   return (
     <Container sx={{ py: 15 }}>
       <Grid container spacing={5}>
-        <Grid
-          item
-          xs={12}
-          component={motion.div}
-          variants={parentVariants}
-          initial="hidden"
-          whileInView="show"
-          exit="exit"
-          viewport={{ once: true }}
-        >
-          <Typography variant="h6" component="div" sx={{ textAlign: "center" }}>
-            {textHeader.split(" ").map((text, key) => (
-              <TextMask key={key} variants={textVariants}>
-                {text}
-              </TextMask>
-            ))}
-          </Typography>
-
-          <Typography variant="h2" sx={{ textAlign: "center", my: 3 }}>
-            {resepsi.tanggal.split(" ").map((text, key) => (
-              <TextMask key={key} variants={textVariants}>
-                {text}
-              </TextMask>
-            ))}
-          </Typography>
-
-          <Divider />
-        </Grid>
-
         <Grid item md={6} xs={12}>
           <CardTanggal
             title="Akad Nikah"
