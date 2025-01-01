@@ -72,7 +72,9 @@ const Hero = () => {
   const mempelaiPria = wedding.mempelai.pria.namaPanggilan;
   const mempelaiWanita = wedding.mempelai.wanita.namaPanggilan;
   const mempelai = `${mempelaiWanita} & ${mempelaiPria}`;
-  const undangan = "The wedding of";
+  const tanggal = wedding.akad.tanggal;
+  const sapaan = "Kepada Yth. Bapak/Ibu/Saudara/i";
+  const tamu = "Mas XXX"
 
   return (
     <motion.div
@@ -118,27 +120,6 @@ const Hero = () => {
         >
           <Container>
             <Typography
-              variant="h2"
-              sx={{
-                textAlign: {
-                  md: "left",
-                  xs: "center",
-                },
-                fontSize: {
-                  md: 70,
-                  xs: 45,
-                },
-                textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
-              }}
-            >
-              {undangan.split(" ").map((text, key) => (
-                <TextMask key={key} variants={textVariants}>
-                  {text}
-                </TextMask>
-              ))}
-            </Typography>
-
-            <Typography
               variant="h1"
               sx={{
                 textAlign: {
@@ -147,12 +128,34 @@ const Hero = () => {
                 },
                 fontSize: {
                   md: "10em",
-                  xs: "6em",
+                  xs: "7em",
                 },
                 textShadow: "5px 5px rgba(60, 42, 33, 0.6)",
               }}
             >
               {mempelai.split(" ").map((text, key) => (
+                <TextMask key={key} variants={textVariants}>
+                  {text}
+                </TextMask>
+              ))}
+            </Typography>
+
+            <Typography
+              variant="h4"
+              component="p"
+              sx={{
+                textAlign: {
+                  md: "left",
+                  xs: "center",
+                },
+                fontSize: {
+                  md: "3em",
+                  xs: "2em",
+                },
+                textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
+              }}
+            >
+              {tanggal.split(" ").map((text, key) => (
                 <TextMask key={key} variants={textVariants}>
                   {text}
                 </TextMask>
@@ -166,7 +169,7 @@ const Hero = () => {
             />
 
             <Typography
-              variant="h3"
+              variant="h4"
               component="p"
               sx={{
                 mt: 2,
@@ -181,12 +184,36 @@ const Hero = () => {
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
               }}
             >
-              {wedding.resepsi.tanggal.split(" ").map((text, key) => (
+              {sapaan.split(" ").map((text, key) => (
                 <TextMask key={key} variants={textVariants}>
                   {text}
                 </TextMask>
               ))}
             </Typography>
+
+            <Typography
+              variant="h3"
+              component="p"
+              sx={{
+                textAlign: {
+                  md: "left",
+                  xs: "center",
+                },
+                fontSize: {
+                  md: "3em",
+                  xs: "2em",
+                },
+                fontWeight: "bold",
+                textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
+              }}
+            >
+              {tamu.split(" ").map((text, key) => (
+                <TextMask key={key} variants={textVariants}>
+                  {text}
+                </TextMask>
+              ))}
+            </Typography>
+            
           </Container>
         </Box>
       </Box>
