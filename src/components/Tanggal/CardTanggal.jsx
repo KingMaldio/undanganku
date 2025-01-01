@@ -121,11 +121,15 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            mt: 3,
+            md: { mt: 4 },
+            xs: { mt: 2 }
           }}
         >
           <CalendarMonthTwoToneIcon
-            sx={{ fontSize: 60, color: "text.secondary" }}
+            sx={{ 
+              md: { fontSize: 60, color: "text.secondary" },
+              xs: { fontSize: 30, color: "text.secondary" }
+            }}
           />
         </Box>
 
@@ -133,7 +137,12 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
           color="text.secondary"
           variant="h5"
           component="p"
-          sx={{ textAlign: "center", mt: 4, fontWeight: 700 }}
+          sx={{ 
+            textAlign: "center", 
+            fontWeight: 700,
+            md: { mt: 4 },
+            xs: { mt: 2 }
+          }}
         >
           {tanggal.split(" ").map((text, key) => (
             <TextMask key={key} variants={textVariants}>
@@ -166,17 +175,28 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            mt: 4,
+            md: { mt: 4 },
+            xs: { mt: 2 }
           }}
         >
-          <MapTwoToneIcon sx={{ fontSize: 60, color: "text.secondary" }} />
+          <MapTwoToneIcon 
+            sx={{ 
+              md: { fontSize: 60, color: "text.secondary" },
+              xs: { fontSize: 30, color: "text.secondary" }
+            }} 
+          />
         </Box>
 
         <Typography
           color="text.secondary"
           variant="h5"
           component="p"
-          sx={{ textAlign: "center", mt: 4, fontWeight: 700 }}
+          sx={{ 
+            textAlign: "center", 
+            fontWeight: 700,
+            md: { mt: 4 },
+            xs: { mt: 2 }
+          }}
         >
           {lokasi.split(" ").map((text, key) => (
             <TextMask key={key} variants={textVariants}>
@@ -197,25 +217,6 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
           ))}
         </Typography>
       </CardContent>
-
-      <CardActions sx={{ p: 5 }}>
-        <Button
-          component={motion.a}
-          variants={iconVariants}
-          disableElevation
-          fullWidth
-          size="large"
-          variant="contained"
-          color="secondary"
-          startIcon={<LocationOnTwoToneIcon />}
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          sx={{ borderRadius: 0 }}
-        >
-          Kunjungi via GMaps
-        </Button>
-      </CardActions>
     </Card>
   );
 };
