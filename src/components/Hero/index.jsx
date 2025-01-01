@@ -128,7 +128,7 @@ const Hero = () => {
                 },
                 fontSize: {
                   md: "10em",
-                  xs: "4em",
+                  xs: "2em",
                 },
                 textShadow: "5px 5px rgba(60, 42, 33, 0.6)",
               }}
