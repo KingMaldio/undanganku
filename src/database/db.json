@@ -6,8 +6,8 @@
   },
   "wedding": {
     "akad": {
-      "tanggal": "Kamis, 3 April 2025",
-      "jam": "08.00 WIB s.d. selesai",
+      "tanggal": "Sabtu, 12 April 2025",
+      "jam": "08.00 s.d. 10.00 WIB",
       "lokasi": "Auditorium Graha Widyatama Prof Rubijanto Misman Unsoed",
       "alamat": "Jl. Profesor DR. HR Boenyamin No.708, Sumampir Wetan, Pabuaran, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53122, Indonesia",
       "gmaps": {
@@ -16,8 +16,8 @@
       }
     },
     "resepsi": {
-      "tanggal": "Kamis, 3 April 2025",
-      "jam": "11.00 WIB s.d. selesai",
+      "tanggal": "Sabtu, 12 April 2025",
+      "jam": "11.00 s.d. 13.00 WIB",
       "lokasi": "Auditorium Graha Widyatama Prof Rubijanto Misman Unsoed",
       "alamat": "Jl. Profesor DR. HR Boenyamin No.708, Sumampir Wetan, Pabuaran, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53122, Indonesia",
       "gmaps": {
@@ -44,7 +44,7 @@
         "namaPanggilan": "Lulu",
         "orangTua": {
           "keterangan": "Anak kedua dari keluarga",
-          "pria": "Bapak Saguh Prijanggono Budi Sutrisno",
+          "pria": "Bapak Saguh Prijanggono Budi Sutrisno (Alm.)",
           "wanita": "Ibu Sri Pangestuti Budi Handayani"
         },
         "foto": "/assets/images/mempelai/wanita.webp",
