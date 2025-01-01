@@ -25,9 +25,8 @@ const textVariants = {
  * @returns React.ReactElement
  */
 const Words = () => {
-  const salam = "Assalamu'alaikum Warahmatullahi Wabarakatuh.";
   const words =
-    "Maha suci Allah yang telah menciptakan mahluk-Nya berpasang-pasangan. Ya Allah, perkenankanlah kami merangkaikan kasih sayang yang Kau ciptakan diantara kami untuk mengikuti Sunnah Rasul-Mu dalam rangka membentuk keluarga yang sakinah, mawaddah, wa rahmah.";
+    "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.\n(Qs. Ar-Rum: 21)";
 
   return (
     <Container
@@ -42,27 +41,9 @@ const Words = () => {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
-        my: 20,
+        my: 10,
       }}
     >
-      <Typography
-        variant="h3"
-        component="div"
-        sx={{
-          textAlign: "center",
-          fontSize: {
-            md: "3em",
-            xs: "2em",
-          },
-        }}
-      >
-        {salam.split(" ").map((text, key) => (
-          <TextMask key={key} variants={textVariants}>
-            {text}
-          </TextMask>
-        ))}
-      </Typography>
-
       <Typography
         variant="h6"
         component="div"
