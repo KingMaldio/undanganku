@@ -30,7 +30,7 @@ const textVariants = {
  * @returns
  */
 const KeluargaBesar = ({ title, orangTuaPria, orangTuaWanita }) => {
-  const header = "Keluarga Besar";
+  const header = `Keluarga Besar ${title}`;
   const orangTua = `${orangTuaPria} & ${orangTuaWanita}`;
 
   return (
@@ -46,22 +46,6 @@ const KeluargaBesar = ({ title, orangTuaPria, orangTuaWanita }) => {
           }}
         >
           {header.split(" ").map((text, key) => (
-            <TextMask key={key} variants={textVariants}>
-              {text}
-            </TextMask>
-          ))}
-        </Typography>
-      </Grid>
-
-      <Grid item xs={12}>
-        <Typography
-          variant="h3"
-          sx={{
-            textAlign: "center",
-            fontFamily: "Arizonia",
-          }}
-        >
-          {title.split(" ").map((text, key) => (
             <TextMask key={key} variants={textVariants}>
               {text}
             </TextMask>
