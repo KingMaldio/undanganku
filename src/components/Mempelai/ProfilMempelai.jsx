@@ -70,7 +70,7 @@ const ProfilMempelai = ({ mempelai }) => {
         xs={12}
         order={{ md: 1, xs: 2 }}
         sx={{
-          minHeight: { md: "100vh", xs: "50vh" },
+          height: { md: "100vh", xs: "50vh" },
           backgroundColor: mempelai.bg,
           display: "flex",
           alignItems: "center",
@@ -82,7 +82,7 @@ const ProfilMempelai = ({ mempelai }) => {
             variant="h3"
             component="h2"
             sx={{
-              mb: "10em",
+              mb: { md: "10em", xs: "2em" },
               textAlign: "center",
               fontSize: { md: "5em" },
             }}
