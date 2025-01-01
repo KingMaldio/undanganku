@@ -70,7 +70,6 @@ const ProfilMempelai = ({ mempelai }) => {
         xs={12}
         order={{ md: 1, xs: 2 }}
         sx={{
-          py: 10,
           minHeight: { md: "100vh", xs: 300 },
           backgroundColor: mempelai.bg,
           display: "flex",
@@ -83,7 +82,6 @@ const ProfilMempelai = ({ mempelai }) => {
             variant="h3"
             component="h2"
             sx={{
-              mb: 4,
               textAlign: "center",
               fontSize: { md: "5em" },
             }}
@@ -99,7 +97,7 @@ const ProfilMempelai = ({ mempelai }) => {
             color="text.secondary"
             variant="h6"
             component="div"
-            sx={{ mb: 4, textAlign: "center" }}
+            sx={{ textAlign: "center" }}
           >
             {orangTua.keterangan.split(" ").map((text, key) => (
               <TextMask key={key} variants={textVariants}>
