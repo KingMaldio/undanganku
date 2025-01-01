@@ -70,7 +70,7 @@ const ProfilMempelai = ({ mempelai }) => {
         xs={12}
         order={{ md: 1, xs: 2 }}
         sx={{
-          minHeight: { md: "100vh", xs: 300 },
+          minHeight: { md: "100vh", xs: "50vh" },
           backgroundColor: mempelai.bg,
           display: "flex",
           alignItems: "center",
@@ -81,8 +81,8 @@ const ProfilMempelai = ({ mempelai }) => {
             color="text.secondary"
             variant="h3"
             component="h2"
-            mb= "1em"
             sx={{
+              mb: "1em",
               textAlign: "center",
               fontSize: { md: "5em" },
             }}
@@ -131,7 +131,7 @@ const ProfilMempelai = ({ mempelai }) => {
           overflow: "hidden",
           height: {
             md: "100vh",
-            xs: 450,
+            xs: "50vh",
           },
         }}
       >
