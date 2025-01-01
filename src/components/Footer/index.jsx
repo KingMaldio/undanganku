@@ -86,15 +86,20 @@ const Footer = () => {
 
           <Grid item xs={12} mb={5}>
             <Divider
-              sx={{ my: 5 }}
+              sx={{ my: 1 }}
               component={motion.div}
               variants={dividerVariants}
             >
-              <FavoriteTwoToneIcon sx={{ fontSize: 50 }} />
+              <FavoriteTwoToneIcon 
+                sx={{ 
+                  md: { fontSize: 50 },
+                  xs: { fontSize: 10 }
+                }} 
+              />
             </Divider>
 
             <Typography
-              variant="h2"
+              variant="h3"
               sx={{ textAlign: "center", fontFamily: "Arizonia" }}
             >
               {berbahagia.split(" ").map((text, key) => (
@@ -115,7 +120,7 @@ const Footer = () => {
           </Grid>
 
           {/* Mempelai wanita */}
-          <Grid item md={6} xs={12} sx={{ mt: { md: 0, xs: 5 } }}>
+          <Grid item md={6} xs={12} sx={{ mt: { md: 0, xs: 2 } }}>
             <KeluargaBesar
               title="Mempelai Wanita"
               orangTuaPria={wanita.orangTua.pria}
