@@ -128,7 +128,7 @@ const Hero = () => {
                 },
                 fontSize: {
                   md: "10em",
-                  xs: "7em",
+                  xs: "4em",
                 },
                 textShadow: "5px 5px rgba(60, 42, 33, 0.6)",
               }}
@@ -176,7 +176,10 @@ const Hero = () => {
                   md: "left",
                   xs: "center",
                 },
-                fontSize: "1em",
+                fontSize: {
+                  md: "1.5em",
+                  xs: "1em",
+                },
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
               }}
             >
