@@ -75,6 +75,8 @@ const Hero = () => {
   const tanggal = wedding.akad.tanggal;
   const sapaan = "Kepada Yth. Bapak/Ibu/Saudara/i";
   const tamu = "Mas XXX"
+  const { font } = useDB((db) => db);
+  const { color } = useDB((db) => db);
 
   return (
     <motion.div
@@ -131,6 +133,7 @@ const Hero = () => {
                   xs: "2em",
                 },
                 textShadow: "5px 5px rgba(60, 42, 33, 0.6)",
+                fontFamily: font.box,
               }}
             >
               {mempelai.split(" ").map((text, key) => (
@@ -153,6 +156,7 @@ const Hero = () => {
                   xs: "2em",
                 },
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
+                fontFamily: font.box,
               }}
             >
               {tanggal.split(" ").map((text, key) => (
@@ -181,6 +185,7 @@ const Hero = () => {
                   xs: "1em",
                 },
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
+                fontFamily: font.normal,
               }}
             >
               {sapaan.split(" ").map((text, key) => (
@@ -204,6 +209,7 @@ const Hero = () => {
                 },
                 fontWeight: "bold",
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
+                fontFamily: font.normal,
               }}
             >
               {tamu.split(" ").map((text, key) => (
