@@ -33,8 +33,7 @@ const textVariants = {
 const KeluargaBesar = ({ title, orangTuaPria, orangTuaWanita }) => {
   const header = `Keluarga Besar ${title}`;
   const orangTua = `${orangTuaPria} & ${orangTuaWanita}`;
-  const { font } = useDB((db) => db);
-  const { color } = useDB((db) => db);
+  const { font, color } = useDB((db) => db);
 
   return (
     <Grid container spacing={1}>
