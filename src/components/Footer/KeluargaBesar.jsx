@@ -2,6 +2,7 @@ import { transition } from "@/animation/transition";
 import { Grid, Typography } from "@mui/material";
 import PropTypes from "prop-types";
 import TextMask from "../TextMask";
+import useDB from "@/hooks/useDB"
 
 /**
  * Text variant
@@ -32,6 +33,8 @@ const textVariants = {
 const KeluargaBesar = ({ title, orangTuaPria, orangTuaWanita }) => {
   const header = `Keluarga Besar ${title}`;
   const orangTua = `${orangTuaPria} & ${orangTuaWanita}`;
+  const { font } = useDB((db) => db);
+  const { color } = useDB((db) => db);
 
   return (
     <Grid container spacing={1}>
@@ -41,8 +44,8 @@ const KeluargaBesar = ({ title, orangTuaPria, orangTuaWanita }) => {
           component="p"
           sx={{
             textAlign: "center",
-            fontFamily: "Arizonia",
-            color: "background.paper",
+            fontFamily: font.normal,
+            color: color.text.dark,
           }}
         >
           {header.split(" ").map((text, key) => (
@@ -54,7 +57,13 @@ const KeluargaBesar = ({ title, orangTuaPria, orangTuaWanita }) => {
       </Grid>
 
       <Grid item xs={12}>
-        <Typography variant="body1" sx={{ textAlign: "center" }}>
+        <Typography 
+          variant="body1" 
+          sx={{ 
+            textAlign: "center",
+            fontFamily: font.normal,
+            color: color.text.dark,
+          }}>
           {orangTua.split(" ").map((text, key) => (
             <TextMask key={key} variants={textVariants}>
               {text}
