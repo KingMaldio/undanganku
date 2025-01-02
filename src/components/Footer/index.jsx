@@ -48,12 +48,12 @@ const dividerVariants = {
  * Footer komponen
  */
 const Footer = () => {
-  const { pria, wanita } = useDB((db) => db.wedding.mempelai);
+  const { wedding, font, color } = useDB((db) => db);
+  const pria = wedding.mempelai.pria;
+  const wanita = wedding.mempelai.wanita;
   const doaRestu =
     "Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.";
   const berbahagia = "Kami Yang Berbahagia";
-  const { font } = useDB((db) => db);
-  const { color } = useDB((db) => db);
 
   return (
     <Box
