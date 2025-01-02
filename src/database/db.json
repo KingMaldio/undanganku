@@ -64,5 +64,23 @@
     "/assets/images/galeri/galeri-06.webp",
     "/assets/images/galeri/galeri-07.webp",
     "/assets/images/galeri/galeri-08.webp"
-  ]
+  ],
+  "color": {
+    "text": {
+      "dark": "6A232C",
+      "light": "980226"
+    },
+    "bg": {
+      "dark": "D2BE9B",
+      "light": "E1ADC0"
+    },
+    "accent": {
+      "pink": "E1ADC0",
+      "brown": "663300"
+    }
+  },
+  "font-family": {
+    "normal": "Montserrat",
+    "script": "Great Vibe",
+    "box": "Playfair Display"
 }
