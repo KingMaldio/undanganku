@@ -52,6 +52,8 @@ const Footer = () => {
   const doaRestu =
     "Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.";
   const berbahagia = "Kami Yang Berbahagia";
+  const { font } = useDB((db) => db);
+  const { color } = useDB((db) => db);
 
   return (
     <Box
@@ -74,7 +76,7 @@ const Footer = () => {
           <Grid item xs={12}>
             <Typography
               variant="h4"
-              sx={{ textAlign: "center", fontFamily: "Arizonia" }}
+              sx={{ textAlign: "center", fontFamily: font.script }}
             >
               {doaRestu.split(" ").map((text, key) => (
                 <TextMask key={key} variants={textVariants}>
@@ -100,7 +102,7 @@ const Footer = () => {
 
             <Typography
               variant="h3"
-              sx={{ textAlign: "center", fontFamily: "Arizonia" }}
+              sx={{ textAlign: "center", fontFamily: font.script }}
             >
               {berbahagia.split(" ").map((text, key) => (
                 <TextMask key={key} variants={textVariants}>
