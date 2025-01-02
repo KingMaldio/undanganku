@@ -133,7 +133,7 @@ const Hero = () => {
                   xs: "2em",
                 },
                 textShadow: "5px 5px rgba(60, 42, 33, 0.6)",
-                fontFamily: font.box,
+                fontFamily: "Arizona",
               }}
             >
               {mempelai.split(" ").map((text, key) => (
