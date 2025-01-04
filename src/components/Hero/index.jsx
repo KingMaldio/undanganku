@@ -129,8 +129,8 @@ const Hero = () => {
                   xs: "center",
                 },
                 fontSize: {
-                  md: "40em",
-                  xs: "16em",
+                  md: "40px",
+                  xs: "16px",
                 },
                 textShadow: "5px 5px rgba(60, 42, 33, 0.6)",
                 fontFamily: "Arizonia",
@@ -153,8 +153,8 @@ const Hero = () => {
                   xs: "center",
                 },
                 fontSize: {
-                  md: "20em",
-                  xs: "12em",
+                  md: "20px",
+                  xs: "12px",
                 },
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
                 fontFamily: font.box,
@@ -183,8 +183,8 @@ const Hero = () => {
                   xs: "center",
                 },
                 fontSize: {
-                  md: "12em",
-                  xs: "8em",
+                  md: "12px",
+                  xs: "8px",
                 },
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
                 fontFamily: font.normal,
@@ -207,8 +207,8 @@ const Hero = () => {
                   xs: "center",
                 },
                 fontSize: {
-                  md: "16em",
-                  xs: "12em",
+                  md: "16px",
+                  xs: "12px",
                 },
                 fontWeight: "bold",
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
