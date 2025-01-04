@@ -67,16 +67,16 @@
   ],
   "color": {
     "text": {
-      "dark": "6A232C",
-      "light": "980226"
+      "dark": "rgb(106 35 44)",
+      "light": "rgb(152 2 38)"
     },
     "bg": {
-      "dark": "D2BE9B",
-      "light": "E1ADC0"
+      "dark": "rgb(210 190 155)",
+      "light": "rgb(180 160 125)"
     },
     "accent": {
-      "pink": "E1ADC0",
-      "brown": "663300"
+      "pink": "rgb(225 173 192)",
+      "brown": "rgb(102 51 0)"
     }
   },
   "font": {
