@@ -131,6 +131,7 @@ const Hero = () => {
                 fontSize: "40vw",
                 textShadow: "5px 5px rgba(60, 42, 33, 0.6)",
                 fontFamily: "Arizonia",
+                color: color.text.dark,
               }}
             >
               {mempelai.split(" ").map((text, key) => (
@@ -151,6 +152,7 @@ const Hero = () => {
                 fontSize: "18vw",
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
                 fontFamily: font.box,
+                color: color.text.dark,
               }}
             >
               {tanggal.split(" ").map((text, key) => (
@@ -177,6 +179,7 @@ const Hero = () => {
                 fontSize: "10vw",
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
                 fontFamily: font.normal,
+                color: color.text.dark,
               }}
             >
               {sapaan.split(" ").map((text, key) => (
@@ -198,6 +201,7 @@ const Hero = () => {
                 fontWeight: "bold",
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
                 fontFamily: font.normal,
+                color: color.text.dark,
               }}
             >
               {tamu.split(" ").map((text, key) => (
