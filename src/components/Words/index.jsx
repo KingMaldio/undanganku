@@ -46,11 +46,11 @@ const Words = () => {
         flexDirection: "column",
         my: 10,
         fontFamily: font.script,
-        color: "black",
+        color: text.dark,
         fontStyle: "italic",
         fontSize: {
-          md: "40px",
-          xs: "16px",
+          md: "20px",
+          xs: "10px",
         },
       }}
     >
