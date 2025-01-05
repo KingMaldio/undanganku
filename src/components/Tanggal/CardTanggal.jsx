@@ -76,6 +76,7 @@ const iconVariants = {
  * @returns Reacr.ReactElement
  */
 const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
+  const { color, font } = useDB((db) => db);
   return (
     <Card
       elevation={0}
