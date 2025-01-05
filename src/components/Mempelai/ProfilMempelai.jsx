@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import React from "react";
 import TextMask from "../TextMask";
+import useDB from "@/hooks/useDB";
 
 const fotoVariants = {
   hidden: {
@@ -45,11 +46,11 @@ const textVariants = {
  * @returns React.ReactElement
  */
 const ProfilMempelai = ({ mempelai, font, color }) => {
+  const { color, font } = useDB((db) => db);
   const { namaDepan, namaBelakang, orangTua } = mempelai;
 
   const namaLengkap = `${namaDepan} ${namaBelakang}`;
-  const namaOrangTua = "Mamah dan Aa";
-    /*`${orangTua.pria} & ${orangTua.wanita}`;*/
+  const namaOrangTua = `${orangTua.pria} & ${orangTua.wanita}`;
 
   return (
     <Grid
