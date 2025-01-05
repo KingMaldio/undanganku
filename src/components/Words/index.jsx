@@ -44,13 +44,14 @@ const Words = () => {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
-        my: 10,
+        my: 5,
+        backgroundColor: color.bg.light,
         fontFamily: font.script,
         color: color.text.dark,
         fontStyle: "italic",
         fontSize: {
           md: "20px",
-          xs: "10px",
+          xs: "12px",
         },
       }}
     >
