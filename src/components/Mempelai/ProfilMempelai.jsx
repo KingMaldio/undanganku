@@ -44,7 +44,7 @@ const textVariants = {
  * @param {object} props
  * @returns React.ReactElement
  */
-const ProfilMempelai = ({ mempelai }) => {
+const ProfilMempelai = ({ mempelai, font, color }) => {
   const { namaDepan, namaBelakang, orangTua } = mempelai;
 
   const namaLengkap = `${namaDepan} ${namaBelakang}`;
@@ -56,7 +56,7 @@ const ProfilMempelai = ({ mempelai }) => {
       spacing={0}
       justifyContent="center"
       alignItems="center"
-      sx={{ backgroundColor: mempelai.bg }}
+      sx={{ backgroundColor: color.bg.dark }}
     >
       <Grid
         component={motion.div}
@@ -72,20 +72,20 @@ const ProfilMempelai = ({ mempelai }) => {
         sx={{
           minHeight: { md: "100vh" },
           height: { xs: "50vh" },
-          backgroundColor: mempelai.bg,
+          backgroundColor: color.bg.dark,
           display: "flex",
           alignItems: "center",
         }}
       >
         <Container>
           <Typography
-            color="text.secondary"
+            color=color.text.light
             variant="h3"
             component="h2"
             sx={{
               mb: { md: "10em", xs: "1em" },
               textAlign: "center",
-              fontSize: { md: "5em" },
+              fontSize: { md: "40px", xs: "32px" },
             }}
           >
             {namaLengkap.split(" ").map((text, key) => (
@@ -96,7 +96,7 @@ const ProfilMempelai = ({ mempelai }) => {
           </Typography>
 
           <Typography
-            color="text.secondary"
+            color=color.text.light
             variant="h6"
             component="div"
             sx={{ textAlign: "center" }}
@@ -109,7 +109,7 @@ const ProfilMempelai = ({ mempelai }) => {
           </Typography>
 
           <Typography
-            color="text.secondary"
+            color=color.text.light
             variant="h5"
             component="div"
             sx={{ textAlign: "center" }}
