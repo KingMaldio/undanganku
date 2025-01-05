@@ -85,7 +85,7 @@ const ProfilMempelai = ({ mempelai }) => {
             variant="h3"
             component="h2"
             sx={{
-              mb: { md: "10em", xs: "1em" },
+              mb: { md: "1em", xs: "1em" },
               textAlign: "center",
               fontSize: { md: "40px", xs: "32px" },
             }}
