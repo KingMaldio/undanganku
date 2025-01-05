@@ -50,7 +50,7 @@ const Words = () => {
         fontStyle: "italic",
         fontSize: {
           md: "20px",
-          xs: "10px",
+          xs: "6px",
         },
       }}
     >
