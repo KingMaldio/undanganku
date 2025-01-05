@@ -95,6 +95,7 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          backgroundColor: color.gradient.light
         }}
       >
         <Typography
