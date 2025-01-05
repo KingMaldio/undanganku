@@ -115,7 +115,7 @@ const Hero = () => {
             display: "flex",
             alignItems: "center",
             backgroundImage: () => {
-              return `linear-gradient(to bottom, transparent, color.bg.light)`;
+              return `linear-gradient(to bottom, transparent, color.gradient.light)`;
             },
           }}
         >
