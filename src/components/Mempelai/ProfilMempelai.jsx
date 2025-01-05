@@ -48,7 +48,8 @@ const ProfilMempelai = ({ mempelai, font, color }) => {
   const { namaDepan, namaBelakang, orangTua } = mempelai;
 
   const namaLengkap = `${namaDepan} ${namaBelakang}`;
-  const namaOrangTua = `${orangTua.pria} & ${orangTua.wanita}`;
+  const namaOrangTua = "Mamah dan Aa"
+    /*`${orangTua.pria} & ${orangTua.wanita}`;*/
 
   return (
     <Grid
