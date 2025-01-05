@@ -75,9 +75,8 @@ const Hero = () => {
   const tanggal = wedding.akad.tanggal;
   const sapaan = "Kepada Yth. Bapak/Ibu/Saudara/i";
   const tamu = "Mas Joko Widodo"
-  const { font } = useDB((db) => db);
-  const { color } = useDB((db) => db);
-
+  const { font, color } = useDB((db) => db);
+  
   return (
     <motion.div
       variants={parentVariants}
@@ -95,7 +94,7 @@ const Hero = () => {
       >
         <Box
           component={motion.img}
-          alt="Hero background"
+          alt="Lulu & Akmal background"
           variants={imageVariants}
           src={hero.banner}
           sx={{
@@ -115,8 +114,8 @@ const Hero = () => {
             width: "100%",
             display: "flex",
             alignItems: "center",
-            backgroundImage: ({ palette }) => {
-              return `linear-gradient(to bottom, transparent, ${palette.background.default})`;
+            backgroundImage: () => {
+              return `linear-gradient(to bottom, transparent, color.bg.light)`;
             },
           }}
         >
@@ -133,8 +132,8 @@ const Hero = () => {
                   xs: "48px",
                 },
                 textShadow: {
-                  md: "3px 3px rgba(255, 255, 255, 0.6)",
-                  xs: "2px 2px rgba(255, 255, 255, 0.6)",
+                  md: `3px 3px ${color.bg.light}`,
+                  xs: `1px 1px ${color.bg.light}`,
                 },
                 fontFamily: font.box,
                 color: color.text.dark,
@@ -159,7 +158,7 @@ const Hero = () => {
                   md: "60px",
                   xs: "30px",
                 },
-                textShadow: "1px 1px rgba(255, 255, 255, 0.6)",
+                textShadow: `1px 1px ${color.bg.light}`,
                 fontFamily: font.box,
                 color: color.text.dark,
               }}
@@ -189,7 +188,7 @@ const Hero = () => {
                   md: "36px",
                   xs: "24px",
                 },
-                textShadow: "1px 1px rgba(255, 255, 255, 0.6)",
+                textShadow: `1px 1px ${color.bg.light}`,
                 fontFamily: font.script,
                 color: color.text.dark,
               }}
@@ -214,7 +213,7 @@ const Hero = () => {
                   xs: "36px",
                 },
                 fontWeight: "bold",
-                textShadow: "1px 1px rgba(255, 255, 255, 0.6)",
+                textShadow: `1px 1px ${color.bg.light}`,
                 fontFamily: font.box,
                 color: color.text.dark,
               }}
