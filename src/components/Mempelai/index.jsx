@@ -9,7 +9,7 @@ import ProfilMempelai from "./ProfilMempelai";
  * @returns React.ReactElement
  */
 const Mempelai = () => {
-  const { wedding, font, color } = useDB((db) => db);
+  const { wanita, pria } = useDB((db) => db.wedding.mempelai);
   return (
     <Box>
       <ProfilMempelai mempelai={wedding.mempelai.pria, font, color} />
