@@ -32,9 +32,10 @@ const textVariants = {
  */
 const Tanggal = () => {
   const { akad, resepsi } = useDB((db) => db.wedding);
+  const { color } = useDB((db) => db);
 
   return (
-    <Container sx={{ py: 15 }}>
+    <Container sx={{ py: 15, backgroundColor: color.bg.dark }}>
       <Grid container spacing={5}>
         <Grid item md={6} xs={12}>
           <CardTanggal
