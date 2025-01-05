@@ -81,7 +81,7 @@
     "gradient": {
       "dark": "rgba(210 190 155 0.6)",
       "light": "rgba(180 160 125 0.6)"
-    },
+    }
   },
   "font": {
     "normal": "Montserrat",
