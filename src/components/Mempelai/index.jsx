@@ -12,8 +12,8 @@ const Mempelai = () => {
   const { wanita, pria } = useDB((db) => db.wedding.mempelai);
   return (
     <Box>
-      <ProfilMempelai mempelai={wedding.mempelai.pria, font, color} />
-      <ProfilMempelai mempelai={wedding.mempelai.wanita, font, color} />
+      <ProfilMempelai mempelai={wedding.mempelai.pria} />
+      <ProfilMempelai mempelai={wedding.mempelai.wanita} />
     </Box>
   );
 };
