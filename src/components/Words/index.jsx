@@ -50,14 +50,21 @@ const Words = () => {
         fontStyle: "italic",
         fontSize: {
           md: "20px",
-          xs: "6px",
+          xs: "10px",
         },
       }}
     >
       <Typography
         variant="h5"
         component="div"
-        sx={{ textAlign: "center", mt: 5 }}
+        sx={{ 
+          textAlign: "center", 
+          mt: 5,
+          fontSize: {
+            md: "20px",
+            xs: "10px",
+          },
+        }}
       >
         {isi.split(" ").map((text, key) => (
           <TextMask key={key} variants={textVariants}>
@@ -69,7 +76,14 @@ const Words = () => {
       <Typography
         variant="h5"
         component="div"
-        sx={{ textAlign: "center", mt: 5 }}
+        sx={{ 
+          textAlign: "center", 
+          mt: 5,
+          fontSize: {
+            md: "20px",
+            xs: "10px",
+          },
+        }}
       >
         {ayat.split(" ").map((text, key) => (
           <TextMask key={key} variants={textVariants}>
