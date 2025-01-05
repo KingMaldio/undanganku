@@ -80,8 +80,8 @@
     }
   },
   "font": {
-    "normal": "Arizonia",
-    "script": "Great Vibe",
+    "normal": "Montserrat",
+    "script": "Arizonia", 
     "box": "Playfair Display"
   }
 }
