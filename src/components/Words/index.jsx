@@ -26,7 +26,7 @@ const textVariants = {
  * @returns React.ReactElement
  */
 const Words = () => {
-  const { font } = useDB((db) => db);
+  const { font, color } = useDB((db) => db);
   const isi =
     "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.";
   const ayat = "(Qs. Ar-Rum: 21)";
@@ -46,7 +46,7 @@ const Words = () => {
         flexDirection: "column",
         my: 10,
         fontFamily: font.script,
-        color: text.dark,
+        color: color.text.dark,
         fontStyle: "italic",
         fontSize: {
           md: "20px",
