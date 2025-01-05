@@ -74,7 +74,7 @@ const Hero = () => {
   const mempelai = `${mempelaiWanita} & ${mempelaiPria}`;
   const tanggal = wedding.akad.tanggal;
   const sapaan = "Kepada Yth. Bapak/Ibu/Saudara/i";
-  const tamu = "Mas XXX"
+  const tamu = "Mas Joko Widodo"
   const { font } = useDB((db) => db);
   const { color } = useDB((db) => db);
 
@@ -129,8 +129,8 @@ const Hero = () => {
                   xs: "center",
                 },
                 fontSize: {
-                  md: "40px",
-                  xs: "16px",
+                  md: "120px",
+                  xs: "48px",
                 },
                 textShadow: "5px 5px rgba(60, 42, 33, 0.6)",
                 fontFamily: "Arizonia",
@@ -153,8 +153,8 @@ const Hero = () => {
                   xs: "center",
                 },
                 fontSize: {
-                  md: "20px",
-                  xs: "12px",
+                  md: "60px",
+                  xs: "36px",
                 },
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
                 fontFamily: font.box,
@@ -183,8 +183,8 @@ const Hero = () => {
                   xs: "center",
                 },
                 fontSize: {
-                  md: "12px",
-                  xs: "8px",
+                  md: "36px",
+                  xs: "24px",
                 },
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
                 fontFamily: font.normal,
@@ -207,11 +207,11 @@ const Hero = () => {
                   xs: "center",
                 },
                 fontSize: {
-                  md: "16px",
-                  xs: "12px",
+                  md: "48px",
+                  xs: "36px",
                 },
                 fontWeight: "bold",
-                textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
+                textShadow: "3px 3px rgba(255, 255, 255, 0.6)",
                 fontFamily: "Playfair Display",
                 color: color.text.dark,
               }}
