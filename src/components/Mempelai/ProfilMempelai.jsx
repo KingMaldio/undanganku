@@ -45,7 +45,7 @@ const textVariants = {
  * @param {object} props
  * @returns React.ReactElement
  */
-const ProfilMempelai = ({ mempelai, font, color }) => {
+const ProfilMempelai = ({ mempelai }) => {
   const { color, font } = useDB((db) => db);
   const { namaDepan, namaBelakang, orangTua } = mempelai;
 
