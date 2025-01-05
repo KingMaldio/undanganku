@@ -98,7 +98,7 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
         }}
       >
         <Typography
-          color="text.secondary"
+          color={color.text.dark}
           variant="h3"
           sx={{ textAlign: "center", fontWeight: 700 }}
         >
@@ -114,27 +114,34 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
           variants={iconVariants}
           sx={{
             border: 2,
-            borderColor: "text.secondary",
+            borderColor: color.text.light,
             borderRadius: "50%",
-            width: 100,
-            height: 100,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            md: { mt: 4 },
-            xs: { mt: 2 }
+            
+            md: { 
+              width: 60,
+              height: 60,
+              mt: 8
+            },
+            xs: { 
+              width: 30,
+              height: 30,
+              mt: 4
+            }
           }}
         >
           <CalendarMonthTwoToneIcon
             sx={{ 
-              md: { fontSize: 60, color: "text.secondary" },
-              xs: { fontSize: 30, color: "text.secondary" }
+              md: { fontSize: 60, color: color.text.light },
+              xs: { fontSize: 30, color: color.text.light }
             }}
           />
         </Box>
 
         <Typography
-          color="text.secondary"
+          color={color.text.dark}
           variant="h5"
           component="p"
           sx={{ 
@@ -152,7 +159,7 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
         </Typography>
 
         <Typography
-          color="text.secondary"
+          color={color.text.light}
           variant="body2"
           sx={{ textAlign: "center", fontWeight: 700 }}
         >
@@ -168,27 +175,33 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
           variants={iconVariants}
           sx={{
             border: 2,
-            borderColor: "text.secondary",
+            borderColor: color.text.light,
             borderRadius: "50%",
-            width: 100,
-            height: 100,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            md: { mt: 4 },
-            xs: { mt: 2 }
+            md: { 
+              width: 60,
+              height: 60,
+              mt: 8
+            },
+            xs: { 
+              width: 30,
+              height: 30,
+              mt: 4
+            }
           }}
         >
           <MapTwoToneIcon 
             sx={{ 
-              md: { fontSize: 60, color: "text.secondary" },
-              xs: { fontSize: 30, color: "text.secondary" }
+              md: { fontSize: 60, color: color.text.light },
+              xs: { fontSize: 30, color: color.text.light }
             }} 
           />
         </Box>
 
         <Typography
-          color="text.secondary"
+          color={color.text.dark}
           variant="h5"
           component="p"
           sx={{ 
@@ -206,9 +219,9 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
         </Typography>
 
         <Typography
-          color="text.secondary"
+          color={color.text.light}
           variant="body2"
-          sx={{ textAlign: "center", fontWeight: 700, mt: 2 }}
+          sx={{ textAlign: "center", fontWeight: 700, mt: 1 }}
         >
           {alamat.split(" ").map((text, key) => (
             <TextMask key={key} variants={textVariants}>
