@@ -132,7 +132,10 @@ const Hero = () => {
                   md: "120px",
                   xs: "48px",
                 },
-                textShadow: "3px 3px rgba(255, 255, 255, 0.6)",
+                textShadow: {
+                  md: "3px 3px rgba(255, 255, 255, 0.6)",
+                  xs: "2px 2px rgba(255, 255, 255, 0.6)",
+                },
                 fontFamily: font.box,
                 color: color.text.dark,
               }}
@@ -171,7 +174,7 @@ const Hero = () => {
             <Box
               component={motion.div}
               variants={dividerVariants}
-              sx={{ my: 4, borderBottom: 3, borderColor: "divider" }}
+              sx={{ my: 4, borderBottom: 3, borderColor: color.accent.brown }}
             />
 
             <Typography
