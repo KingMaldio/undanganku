@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import React from "react";
 import TextMask from "../TextMask";
+import useDB from "@/hooks/useDB";
 
 const parentVariants = {
   hidden: {
