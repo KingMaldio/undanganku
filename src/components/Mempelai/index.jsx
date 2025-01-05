@@ -10,10 +10,11 @@ import ProfilMempelai from "./ProfilMempelai";
  */
 const Mempelai = () => {
   const { wanita, pria } = useDB((db) => db.wedding.mempelai);
+  const { font, color } = useDB((db) => db);
   return (
     <Box>
-      <ProfilMempelai mempelai={pria} />
-      <ProfilMempelai mempelai={wanita} />
+      <ProfilMempelai mempelai={pria, font, color} />
+      <ProfilMempelai mempelai={wanita, font, color} />
     </Box>
   );
 };
