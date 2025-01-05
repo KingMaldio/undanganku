@@ -79,7 +79,7 @@ const ProfilMempelai = ({ mempelai, font, color }) => {
       >
         <Container>
           <Typography
-            color=color.text.light
+            color={color.text.light}
             variant="h3"
             component="h2"
             sx={{
@@ -96,7 +96,7 @@ const ProfilMempelai = ({ mempelai, font, color }) => {
           </Typography>
 
           <Typography
-            color=color.text.light
+            color={color.text.light}
             variant="h6"
             component="div"
             sx={{ textAlign: "center" }}
@@ -109,7 +109,7 @@ const ProfilMempelai = ({ mempelai, font, color }) => {
           </Typography>
 
           <Typography
-            color=color.text.light
+            color={color.text.light}
             variant="h5"
             component="div"
             sx={{ textAlign: "center" }}
