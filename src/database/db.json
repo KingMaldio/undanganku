@@ -36,7 +36,7 @@
           "wanita": "Ibu Nunik Kadarwati"
         },
         "foto": "/assets/images/mempelai/pria.webp",
-        "bg": "rgb(229, 229, 203)"
+        "bg": "rgb(210 190 155)"
       },
       "wanita": {
         "namaDepan": "Luthfiana",
@@ -48,7 +48,7 @@
           "wanita": "Ibu Sri Pangestuti Budi Handayani"
         },
         "foto": "/assets/images/mempelai/wanita.webp",
-        "bg": "rgb(213, 206, 163)"
+        "bg": "rgb(180 160 125)"
       }
     }
   },
@@ -77,7 +77,11 @@
     "accent": {
       "pink": "rgb(225 173 192)",
       "brown": "rgb(102 51 0)"
-    }
+    },
+    "gradient": {
+      "dark": "rgba(210 190 155 0.6)",
+      "light": "rgba(180 160 125 0.6)"
+    },
   },
   "font": {
     "normal": "Montserrat",
